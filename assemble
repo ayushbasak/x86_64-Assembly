@@ -1,5 +1,7 @@
 #!/bin/bash
-gcc -c main.S -o main.o
+echo "Enter name of Assembly file"
+read assemblyFile
+gcc -c $assemblyFile -o main.o
 echo "Object file Created"
 gcc main.o -o main
 echo "Executable created"
