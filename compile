@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -S main.c -o main.S
+echo "Compiled to Assembly"
