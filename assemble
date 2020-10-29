@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "Enter name of Assembly file"
 read assemblyFile
-gcc -c $assemblyFile -o main.o
+gcc -c $assemblyFile -o $assemblyFile.o
 echo "Object file Created"
-gcc main.o -o main
+gcc $assemblyFile.o -o $assemblyFile.exe
 echo "Executable created"
+rm -r $assemblyFile.o

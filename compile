@@ -1,3 +1,5 @@
 #!/bin/bash
-gcc -S main.c -o main.S
+echo "Enter C file to compile"
+read cfile
+gcc -S $cfile -o $cfile.s
 echo "Compiled to Assembly"
